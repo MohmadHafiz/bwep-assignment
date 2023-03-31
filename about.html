@@ -162,15 +162,31 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-5 col-xl-4">
-                        <div>
-                            <form class="p-3 p-xl-4" method="post">
-                                <legend style="border-bottom-width: 5px;border-bottom-style: solid;">FEEDBACK FORM</legend>
-                                <div class="mb-3"><input class="form-control" type="text" id="name-2" name="name" placeholder="Name"></div>
-                                <div class="mb-3"><input class="form-control" type="email" id="email-2" name="email" placeholder="Email"></div>
-                                <div class="mb-3"><textarea class="form-control" id="message-2" name="message" rows="6" placeholder="Message"></textarea></div>
-                                <div><button class="btn btn-primary d-block w-100" type="submit">Send </button></div>
-                            </form>
-                        </div>
+                        <div><form class="p-3 p-xl-4 needs-validation" method="post" novalidate>
+    <legend style="border-bottom-width: 5px;border-bottom-style: solid;">FEEDBACK FORM</legend>
+    <div class="mb-3">
+        <input id="name-2" class="form-control form-control form-control" type="text" name="name" placeholder="Name" pattern="[a-zA-Z ]{1,20}" required />
+        <div class="valid-feedback">
+            <span> Looks good! </span>
+        </div>
+        <div class="invalid-feedback">
+            <span> Not Looks good! </span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <input id="email-2" class="form-control form-control form-control" type="email" name="email" placeholder="Email" required />
+        <div class="valid-feedback">
+            <span> Looks good! </span>
+        </div>
+        <div class="invalid-feedback">
+            <span> Not Looks good! </span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <textarea id="message-2" class="form-control form-control form-control" name="message" rows="6" placeholder="Message" maxlength="200" required></textarea>
+    </div>
+    <div><button class="btn btn-info d-block w-100" type="submit">Send </button></div>
+</form></div>
                     </div>
                 </div>
             </div>
@@ -219,6 +235,7 @@ var map = new google.maps.Map(document.getElementById("map-1"),mapProp);
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/Faq-by-pomdre-faq.js"></script>
+    <script src="assets/js/formfeedback.js"></script>
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/MUSA_product-display-product-display.js"></script>
     <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>

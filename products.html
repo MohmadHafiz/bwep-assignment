@@ -52,29 +52,31 @@
     <div class="container" style="margin-top: 60px;margin-bottom: 10px;">
         <div class="accordion" role="tablist" id="accordion-1">
             <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">Search Filter</button></h2>
-                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="true" aria-controls="accordion-1 .item-1">Search Filter</button></h2>
+                <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-1">
                     <div class="accordion-body">
                         <div class="card-group">
                             <div class="card">
                                 <div class="card-body d-flex flex-column justify-content-between">
                                     <h6 class="card-title">CATEGORIES</h6>
-                                    <div class="form-check"><input class="form-check-input" type="radio" id="categories" value="appliances" name="category"><label class="form-check-label" for="categories">Appliances</label></div>
+                                    <div class="form-check"><input class="form-check-input" type="radio" id="categories" value="appliances" name="category" checked=""><label class="form-check-label" for="categories">Appliances</label></div>
                                     <div class="form-check"><input class="form-check-input" type="radio" id="categories" value="snacks" name="category"><label class="form-check-label" for="categories">Snacks</label></div>
-                                    <div class="form-check"><input class="form-check-input" type="radio" id="categories" value="vagies" name="category"><label class="form-check-label" for="categories">Vagies</label></div><button type="button" style="width: 100%;margin-top: 10px;margin-bottom: 10px;">Search Category</button>
+                                    <div class="form-check"><input class="form-check-input" type="radio" id="categories" value="vagies" name="category"><label class="form-check-label" for="categories">Vagies</label></div><button class="btn btn-info" type="button" style="width: 100%;margin-top: 10px;margin-bottom: 10px;" onclick="cat_click()">Search Category</button>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body d-flex flex-column justify-content-between">
-                                    <h6 class="card-title">PRICE RANGE</h6><input class="form-range" type="range" min="5" max="200" value="200"><button type="button" style="width: 100%;margin-top: 10px;margin-bottom: 10px;">Search Price Range</button>
+                                    <h6 class="card-title">PRICE RANGE</h6>
+                                    <div class="d-flex justify-content-center"><span id="max-price">$200</span></div><input class="form-range" type="range" id="price-range" min="5" max="200" value="200" name="price-range">
+                                    <div class="d-flex justify-content-between"><span>$5</span><span>$200</span></div><button class="btn btn-info" type="button" style="width: 100%;margin-top: 10px;margin-bottom: 10px;" onclick="price_click()">Search Price Range</button>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body d-flex flex-column justify-content-between">
-                                    <h6 class="card-title">PRODUCT SEARCH</h6><input type="text" style="width: 100%;" placeholder="Search Product"><button type="button" style="width: 100%;margin-top: 10px;margin-bottom: 10px;">Search Product</button>
+                                    <h6 class="card-title">PRODUCT SEARCH</h6><input type="text" id="productsearch" style="width: 100%;" placeholder="Search Product Name" name="productsearch"><button class="btn btn-info" type="button" style="width: 100%;margin-top: 10px;margin-bottom: 10px;" onclick="name_click()">Search Product</button>
                                 </div>
                             </div>
-                        </div>
+                        </div><button class="btn btn-warning" type="button" style="width: 100%;margin-top: 15px;" onclick="reset_search()">reset search</button>
                     </div>
                 </div>
             </div>

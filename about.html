@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="assets/css/Simple-Slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/index.global.min.js"></script>
 </head>
 
 <body style="background: #CDC9C3;font-family: Inter, sans-serif;">
@@ -65,64 +66,7 @@
         </div>
     </div>
     <div class="container" style="margin-bottom: 60px;margin-top: 60px;">
-        <div class="bootstrap_calendar">
-            <div class="container py-5">
-                <header class="text-center text-white mb-5">
-                    <h1 class="display-4" style="color: rgb(0,0,0);border-bottom-width: 5px;border-bottom-style: solid;">Calendar</h1>
-                </header>
-                <div class="bg-white shadow calendar p-5">
-                    <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
-                        <h2 class="text-uppercase month font-weight-bold mb-0">APRIL2023</h2>
-                    </div>
-                    <p class="text-muted font-italic mb-5">No events for this day.</p>
-                    <ol class="day-names list-unstyled">
-                        <li class="text-uppercase font-weight-bold">Sun</li>
-                        <li class="text-uppercase font-weight-bold">Mon</li>
-                        <li class="text-uppercase font-weight-bold">Tue</li>
-                        <li class="text-uppercase font-weight-bold">Wed</li>
-                        <li class="text-uppercase font-weight-bold">Thu</li>
-                        <li class="text-uppercase font-weight-bold">Fri</li>
-                        <li class="text-uppercase font-weight-bold">Sat</li>
-                    </ol>
-                    <ol class="days list-unstyled">
-                        <li><div class="date">1</div><div class="event bg-success">10% discount</div></li>
-                        <li><div class="date">2</div></li>
-                        <li><div class="date">3</div></li>
-                        <li><div class="date">4</div></li>
-                        <li><div class="date">5</div></li>
-                        <li><div class="date">6</div></li>
-                        <li><div class="date">7</div></li>
-                        <li><div class="date">8</div></li>
-                        <li><div class="date">9</div></li>
-                        <li><div class="date">10</div></li>
-                        <li><div class="date">11</div></li>
-                        <li><div class="date">12</div></li>
-                        <li><div class="date">13</div><div class="event all-day begin span-2 bg-warning">FREE SHIPPING DAY</div></li>
-                        <li><div class="date">14</div></li>
-                        <li><div class="date">15</div><div class="event all-day end bg-success">20% discount</div></li>
-                        <li><div class="date">16</div></li>
-                        <li><div class="date">17</div></li>
-                        <li><div class="date">18</div></li>
-                        <li><div class="date">19</div></li>
-                        <li><div class="date">20</div></li>
-                        <li><div class="date">21</div></li>
-                        <li><div class="date">22</div><div class="event bg-primary">12am - 12pm FREE SHIPPING</div><div class="event bg-info">30% discount</div></li>
-                        <li><div class="date">23</div></li>
-                        <li><div class="date">24</div></li>
-                        <li><div class="date">25</div></li>
-                        <li><div class="date">26</div></li>
-                        <li><div class="date">27</div></li>
-                        <li><div class="date">28</div></li>
-                        <li><div class="date">29</div></li>
-                        <li><div class="date">30</div></li>
-                        <li class="outside"><div class="date">1</div></li>
-                        <li class="outside"><div class="date">2</div></li>
-                        <li class="outside"><div class="date">3</div></li>
-                        <li class="outside"><div class="date">4</div></li>
-                    </ol>
-                </div>
-            </div>
-        </div>
+        <div id="calendar"></div>
     </div>
     <div class="container">
         <section class="py-4 py-xl-5">
@@ -228,8 +172,10 @@ var map = new google.maps.Map(document.getElementById("map-1"),mapProp);
 </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/calendar.js"></script>
     <script src="assets/js/Faq-by-pomdre-faq.js"></script>
     <script src="assets/js/formfeedback.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/index.global.min.js"></script>
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/MUSA_product-display-product-display.js"></script>
     <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>

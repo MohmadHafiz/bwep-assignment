@@ -4,5 +4,6 @@ a {
 
 .product-box {
   overflow: hidden;
+  cursor: pointer;
 }
 

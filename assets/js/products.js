@@ -5,138 +5,161 @@ var products = [
         "image" : "assets/img/massage-guns.jpg",
         "type" : "appliances",
         "price" : 150,
+        "descripton":"",
     },
     {
         "product_name" : "Rubberband",
         "image" : "assets/img/rubberband.jpg",
         "type" : "appliances",
         "price" : 5,
+        "descripton":"",
     },
     {
         "product_name" : "JellyWorm",
         "image" : "assets/img/jelllyworm.jpg",
         "type" : "snacks",
         "price" : 10,
+        "descripton":"",
     },
     {
         "product_name" : "egg plant",
         "image" : "assets/img/eggplant.jpg",
         "type" : "vagies",
         "price" : 5,
+        "descripton":"",
     },
     {
         "product_name" : "carrots",
         "image" : "assets/img/00071464100162.jpg",
         "type" : "vagies",
         "price" : 5,
+        "descripton":"",
     },
     {
         "product_name" : "waffel maker",
         "image" : "assets/img/2109990_1.jpg",
         "type" : "appliances",
         "price" : 25,
+        "descripton":"",
     },
     {
         "product_name" : "cheetos",
         "image" : "assets/img/81aLjv5qZOL.jpg",
         "type" : "snacks",
         "price" : 5,
+        "descripton":"",
     },
     {
         "product_name" : "lays packs",
         "image" : "assets/img/81qgHfivofL.jpg",
         "type" : "snacks",
         "price" : 15,
+        "descripton":"",
     },
     {
         "product_name" : "red onions",
         "image" : "assets/img/a69cebd2c91edea95474a8d6f901e769.jpg",
         "type" : "vagies",
         "price" : 7,
+        "descripton":"",
     },
     {
         "product_name" : "asparagus",
         "image" : "assets/img/asparagus-in-season-2.jpg",
         "type" : "vagies",
         "price" : 7,
+        "descripton":"",
     },
     {
         "product_name" : "blender",
         "image" : "assets/img/blenders.jpg",
         "type" : "appliances",
         "price" : 20,
+        "descripton":"",
     },
     {
         "product_name" : "broccoli",
         "image" : "assets/img/broccoli.jpg",
         "type" : "vagies",
         "price" : 5,
+        "descripton":"",
     },
     {
         "product_name" : "chewy",
         "image" : "assets/img/chewy-granola-bars---chocolate-chip-primary.jpg",
         "type" : "snacks",
         "price" : 8,
+        "descripton":"",
     },
     {
         "product_name" : "veggie straws",
         "image" : "assets/img/GUEST_3b242425-1435-4f70-a276-ca6d489e548c.jpg",
         "type" : "vagies",
         "price" : 5,
+        "descripton":"",
     },
     {
         "product_name" : "steamboat cooker",
         "image" : "assets/img/GUEST_3c00b964-8074-49c6-82e9-837210154aff.jpg",
         "type" : "appliances",
         "price" : 25,
+        "descripton":"",
     },
     {
         "product_name" : "toaster",
         "image" : "assets/img/GUEST_7154c9d5-7b7d-41ec-88ac-5001d4069044.jpg",
         "type" : "appliances",
         "price" : 25,
+        "descripton":"",
     },
     {
         "product_name" : "oven",
         "image" : "assets/img/GUEST_933dd677-1c61-4720-8c89-76f95bf814e5.jpg",
         "type" : "appliances",
         "price" : 45,
+        "descripton":"",
     },
     {
         "product_name" : "pepper & onion",
         "image" : "assets/img/GUEST_b4fde2c2-2453-47f0-9541-61a6f9ae8501.jpg",
         "type" : "vagies",
         "price" : 10,
+        "descripton":"",
     },
     {
         "product_name" : "hand mixer",
         "image" : "assets/img/handmixer.jpg",
         "type" : "appliances",
         "price" : 20,
+        "descripton":"",
     },
     {
         "product_name" : "oreo",
         "image" : "assets/img/oreo.jpg",
         "type" : "snacks",
         "price" : 6,
+        "descripton":"",
     },
     {
         "product_name" : "quaker rice crisps",
         "image" : "assets/img/QuakerRiceCrisps.jpg",
         "type" : "snacks",
         "price" : 11,
+        "descripton":"",
     },
-        {
+    {
         "product_name" : "slow cookers",
         "image" : "assets/img/slowcookers.jpg",
         "type" : "appliances",
         "price" : 24,
+        "descripton":"",
     },
-        {
+    {
         "product_name" : "mix vegies",
         "image" : "assets/img/vegies.jpg",
         "type" : "vagies",
         "price" : 9,
+        "descripton":"",
     },
 ]
 
@@ -226,9 +249,6 @@ function add_product(search){
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-// console.log(urlParams.has('cat'));
-// console.log(urlParams.has('price'));
-// console.log(urlParams.has('name'));
 if(urlParams.has('cat') || urlParams.has('price') || urlParams.has('name')){
    
     if(urlParams.has('cat')){

@@ -4,13 +4,13 @@ var products = [
         "product_name" : "Massage Gun",
         "image" : "assets/img/massage-guns.jpg",
         "type" : "appliances",
-        "price" : 5,
+        "price" : 150,
     },
     {
         "product_name" : "Rubberband",
         "image" : "assets/img/rubberband.jpg",
         "type" : "appliances",
-        "price" : 10,
+        "price" : 5,
     },
     {
         "product_name" : "JellyWorm",

@@ -196,6 +196,28 @@ function reset_search(){
     window.location.href = window.location.href.split("?")[0];
 }
 
+function show_product(product_name){
+    for (const [key] of Object.entries(products)){
+        var pn = products[key]["product_name"];
+        var i = products[key]["image"];
+        var t = products[key]["type"];
+        var p = products[key]["price"];
+        var d = products[key]["descripton"];
+        if(product_name === pn){
+            var template = "<div>";
+            template += "<div style=\"height: 400px;width: 100%;background: url('"+i+"') center / contain no-repeat;border: 7px solid var(--bs-gray-800);\"></div>";
+            template += "<h1 class=\"fw-bolder\" style=\"margin-top: 20px;margin-bottom: 20px;padding-left: 10px;font-family: Inter, sans-serif;\">"+pn+"</h1>";
+            template += "<div class=\"d-flex d-lg-flex justify-content-end justify-content-lg-end\"><span class=\"fw-bolder\" style=\"font-size: 62px;font-family: Roboto, sans-serif;color: var(--bs-gray-700);\">$"+p+"</span></div>";
+            template += "<div class=\"d-lg-flex justify-content-lg-end\">";
+            template += "<p style=\"text-align: justify;padding-right: 20px;width: 100%;padding-left: 20px;\">"+d+"</p>";
+            template += "</div></div>";
+            $("#product-view").show();
+            $("#products-box").hide();
+            $("#product-view").append(template);
+        }
+    }
+}
+
 function add_product(search){
     box.innerHTML = "<div id=\"product-row-0\" class=\"row d-xxl-flex justify-content-xxl-center align-items-xxl-center\"></div>";
     element_row = document.getElementById("product-row-0");
@@ -213,11 +235,11 @@ function add_product(search){
         var t = products[key]["type"];
         var p = products[key]["price"];
 
-        var template = "<div class=\"col-md-4 col-xxl-3 d-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-xxl-center align-items-xxl-center\" style=\"margin-top: 5px;margin-bottom: 5px;\">";
+        var template = "<div id=\"\" class=\"deProduct col-md-4 col-xxl-3 d-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center justify-content-xxl-center align-items-xxl-center\" style=\"margin-top: 5px;margin-bottom: 5px;\">";
         template += "    <div class=\"d-flex flex-column product-box\" style=\"width: 100%;height: 300px;background: #ffffff;border-radius: 15px;max-width: 250px;margin: 20px;\">";
         template += "        <div class=\"d-xxl-flex align-items-xxl-start\" style=\"width: 100%;height: 60%;background: url('"+i+"') center / contain no-repeat;\"></div>";
         template += "        <div class=\"d-flex flex-column justify-content-between\" style=\"width: 100%;height: 40%;\">";
-        template += "            <div><span class=\"text-nowrap d-block\" style=\"width: 100%;font-size: 20px;padding-left: 10px;\">"+pn+"</span>";
+        template += "            <div><span id=\"\" class=\"product-name text-nowrap d-block\" style=\"width: 100%;font-size: 20px;padding-left: 10px;\">"+pn+"</span>";
         template += "<span class=\"d-block\" style=\"width: 100%;color: rgba(33,37,41,0.62);padding-left: 10px;\">"+t+"</span></div>";
         template += "<span class=\"fw-bolder\" style=\"text-align: right;padding-right: 10px;font-family: Inter, sans-serif;font-size: 37px;\">$"+p+"</span></div></div></div>";
 
@@ -268,6 +290,17 @@ if(urlParams.has('cat') || urlParams.has('price') || urlParams.has('name')){
         price.innerHTML = "$"+search_val;
         add_product("price");
     }
-   }else{
+}else if(urlParams.has('prod')){
+    show_product(urlParams.get('prod'));
+}else{
        add_product("all");
-   }
+}
+
+$(document).ready(function() {
+    $('.deProduct').click(function() {
+      var childElement = $(this).find('.product-name');
+    //   console.log(childElement.text());
+      var link = window.location.href.split("?")[0]
+      window.location.href = link + "?prod=" + childElement.text() ;
+    });
+  });

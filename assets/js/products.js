@@ -299,8 +299,7 @@ if(urlParams.has('cat') || urlParams.has('price') || urlParams.has('name')){
 $(document).ready(function() {
     $('.deProduct').click(function() {
       var childElement = $(this).find('.product-name');
-    //   console.log(childElement.text());
       var link = window.location.href.split("?")[0]
       window.location.href = link + "?prod=" + childElement.text() ;
     });
-  });
+});

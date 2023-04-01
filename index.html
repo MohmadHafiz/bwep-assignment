@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/accordion-faq-list.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-Calendar.css">
     <link rel="stylesheet" href="assets/css/card-3-column-animation-shadows-images.css">
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/FAQ-Frequentlly-Asked-Questions-faq.css">
     <link rel="stylesheet" href="assets/css/FAQ-Frequentlly-Asked-Questions.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-images.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css">
     <link rel="stylesheet" href="assets/css/MUSA_carousel-product-cart-slider-carousel-product-cart-slider.css">
     <link rel="stylesheet" href="assets/css/MUSA_carousel-product-cart-slider.css">
     <link rel="stylesheet" href="assets/css/MUSA_product-display-product-display.css">
@@ -34,6 +35,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 <script src="assets/js/jquery-3.6.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/index.global.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
 </head>
 
 <body style="background: #CDC9C3;font-family: Inter, sans-serif;">
@@ -58,193 +60,33 @@
             <div class="carousel-item"><img class="img-fluid w-100 d-block" src="assets/img/blog-supermarket-inventory-management-1.jpg.optimal.jpg" alt="Slide Image" style="height: 400px;"></div>
             <div class="carousel-item"><img class="img-fluid w-100 d-block" src="assets/img/abnout%20us.jpg" alt="Slide Image" style="height: 400px;"></div>
         </div>
-        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carousel-1" data-bs-slide-to="2"></li>
-            <li data-bs-target="#carousel-1" data-bs-slide-to="3"></li>
-        </ol>
     </div>
     <h1 class="fw-bolder" style="text-align: center;font-family: Inter, sans-serif;">Top&nbsp; Products</h1>
-    <div class="carousel slide" data-bs-ride="carousel" id="carousel-2">
-        <div class="carousel-inner">
+    <div class="carousel slide" data-bs-ride="false" id="carousel-3">
+        <div class="carousel-inner" id="topProductSlide">
             <div class="carousel-item active">
-                <section>
-                    <div class="container" style="padding-right: 28px;padding-left: 28px;">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/eggplant.jpg" style="padding: 10px;width: 100%;height: 320px;">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">EggPlant</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Fresh vegies everday.</p>
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/how-to-watch-john-wick.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">John Wick</p>
-                                                <p class="text-muted mb-0">BabaYaga69</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">High quality.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;margin-right: 0px;margin-bottom: 0px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/jelllyworm.jpg" style="padding: 10px;width: 100%;height: 320px;" width="397" height="314">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Giant Jelly Worm&nbsp;</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Most biggest jelly worm in the world.</p>
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/d2VQhE.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">Andrew Tate</p>
-                                                <p class="text-muted mb-0">TopG2022</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">Used for training.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/massage-guns.jpg" style="padding: 10px;width: 100%;height: 320px;">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Massage gun&nbsp;</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Mostly relieve your pain.</p>
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/EpsQxQHXYAMppiq.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">Johnny Sin</p>
-                                                <p class="text-muted mb-0">Plumber_Teacher_Fireman</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">Save my energy for my jobs.</p>
+                <div class="container py-4 py-xl-5" style="margin-top: 20px;margin-bottom: 20px;">
+                    <div class="row gy-4 gy-md-0">
+                        <div class="col-md-6">
+                            <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png"></div>
+                        </div>
+                        <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-lg-start align-items-lg-center justify-content-xl-center">
+                            <div style="max-width: 350px;width: 100%;">
+                                <h2 class="text-uppercase fw-bolder" style="font-family: Inter, sans-serif;">{PRODUCT NAME}</h2>
+                                <p class="my-3">Product Rate:&nbsp;<i class="fa fa-star" style="color: var(--bs-orange);"></i>&nbsp;({RATE})</p><a class="btn btn-danger btn-lg me-2" role="button" href="products.html?prod=">Check this product out</a>
+                                <div class="d-flex justify-content-between" style="margin-top: 15px;padding: 10px;background: #ffffff;box-shadow: 6px 7px 14px 3px rgba(33,37,41,0.56);border-radius: 20px;">
+                                    <div style="width: 70px;height: 70px;border-radius: 100%;background: url(&quot;assets/img/khalidd.jpg&quot;) center / contain no-repeat, var(--bs-gray-dark);"></div>
+                                    <div style="width: 75%;"><span class="fw-bolder d-block" style="width: 100%;font-family: Roboto, sans-serif;font-size: 20px;color: var(--bs-blue);text-align: left;">{user}</span><span class="fw-lighter d-block" style="width: 100%;font-family: Roboto, sans-serif;font-size: 15px;color: var(--bs-gray);text-align: left;">{username}</span>
+                                        <p class="text-break" style="height: 72px;text-align: justify;">{comment}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
-            <div class="carousel-item">
-                <section>
-                    <div class="container" style="padding-right: 28px;padding-left: 28px;">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/blenders.jpg" style="padding: 10px;width: 100%;height: 320px;">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Blender</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Fresh vegies everday.</p>
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/justin.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">Wicker</p>
-                                                <p class="text-muted mb-0">WalkAlone</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">High quality and long lasting.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;margin-right: 0px;margin-bottom: 0px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/oreo.jpg" style="padding: 10px;width: 100%;height: 320px;" width="397" height="314">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Oreo</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Most biggest jelly worm in the world.</p>
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/Drake.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">Taty</p>
-                                                <p class="text-muted mb-0">Floating_Sky</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">Fun to share or to enjoy all on your own.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/vegies.jpg" style="padding: 10px;width: 100%;height: 320px;">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Mix Vegies&nbsp;</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Just Grab and Go.</p>
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/khalidd.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">Malai</p>
-                                                <p class="text-muted mb-0">Goaty</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">Save time.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="carousel-item">
-                <section>
-                    <div class="container" style="padding-right: 28px;padding-left: 28px;">
-                        <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/pringle.jpg" style="padding: 10px;width: 100%;height: 320px;">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Pringles</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Most wanted snacks.</p>
-
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/lebronjames.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">Lebron Jahames</p>
-                                                <p class="text-muted mb-0">3pointersGoat</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">Durability.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;margin-right: 0px;margin-bottom: 0px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/rubberband.jpg" style="padding: 10px;width: 100%;height: 320px;" width="397" height="314">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Rubberband</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Used for daily used.</p>
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/samsuddin.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">SamsudinMelon</p>
-                                                <p class="text-muted mb-0">Barbers</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">Long lasting.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" style="padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;">
-                                <div class="bg-light border rounded shadow card" data-bss-hover-animate="pulse"><img class="card-img-top" src="assets/img/vaseline.jpg" style="padding: 10px;width: 100%;height: 320px;">
-                                    <div class="card-body">
-                                        <h3 class="card-title" style="font-family: Antic, sans-serif;color: rgb(81,87,94);">Vaseline</h3>
-                                        <h5 class="card-sub-title" style="font-family: Antic, sans-serif;color: #38ae53;"></h5><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i><i class="icon ion-star" style="color: rgb(238,158,3);"></i>
-                                        <p class="card-text" style="font-family: Antic, sans-serif;color: rgb(81,87,94);"></p><p id="lorem">Make life more easier.</p>
-                                        <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/dreamybull.jpg">
-                                            <div>
-                                                <p class="fw-bold text-primary mb-0">Perrel Brown</p>
-                                                <p class="text-muted mb-0">DreamyBull</p>
-                                            </div>
-                                        </div>
-                                        <p class="bg-light border rounded border-0 border-light p-4">Smells nice.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
-        <div><a class="carousel-control-prev" href="#carousel-2" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carousel-2" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carousel-2" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carousel-2" data-bs-slide-to="2"></li>
-        </ol>
+        <div><a class="carousel-control-prev" href="#carousel-3" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-3" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
     </div>
     <div class="container" style="margin-bottom: 60px;margin-top: 60px;"></div>
     <footer style="background: #555555;color: rgb(255,255,255);">
@@ -273,8 +115,12 @@
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/Faq-by-pomdre-faq.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/index.global.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/MUSA_product-display-product-display.js"></script>
+    <script src="assets/js/product-zoom.js"></script>
+    <script src="assets/js/productData.js"></script>
+    <script src="assets/js/Reviewer.js"></script>
     <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
 </body>

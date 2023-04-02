@@ -5,8 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     events: [
       {
-        title: 'april fool sale',
+        title: 'April fool sale',
         start: '2023-04-01'
+      },
+      {
+        title: '5% discount',
+        start: '2023-04-01',
+        end: '2023-04-04'
       },
       {
         title: '30% discount for appliances',

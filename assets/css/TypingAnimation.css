@@ -1,0 +1,30 @@
+.container_TA {
+  position: relative;
+}
+
+.text_TA {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2rem;
+  background-color: white;
+  padding: 5px;
+}
+
+.text_hide_TA {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #CDC9C3;
+}
+
+.text_cursor_TA {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  border-left: 3px solid black;
+}
+

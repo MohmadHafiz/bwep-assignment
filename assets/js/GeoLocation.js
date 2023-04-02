@@ -1,4 +1,24 @@
-var cordinet= [
+// -----------------------------------------------------------
+//                          READ ME
+// -----------------------------------------------------------
+
+// import this on head
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js" ></script>
+// <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+// <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css">
+
+
+// create this in body or anywhere you want to add map
+// <div id="mapcontainer"></div>
+
+// -----------------------------------------------------------
+
+
+var height_size = 400;
+var enable_info = true;
+
+// change this data
+var mapData= [
 	{
 		"la":4.9086345,
 		"lo":114.9217906,
@@ -19,16 +39,23 @@ var cordinet= [
 	},
 ]
 
+function create_div(){
+	$('#mapcontainer').empty();
+	for (const [cordi] of Object.entries(mapData)){
+		$("#mapcontainer").append("<div class=\"container\" style=\"margin-top: 20px; margin-bottom: 20px;\">");
+		var id = mapData[cordi]["id"]
+		var template = "<div id=\""+id+"\" style=\"width: 100%; height: "+height_size+"px;\" > </div>";
+		$("#mapcontainer").append(template);
+		$("#mapcontainer").append("</div>");
+	}
+}
+
 function showPosition() {
-	// var latitude = 4.8759145;
-	// var longitude = 114.8720366;
-	// document.getElementById("coordinates").innerHTML = "Latitude: " + latitude + "<br>Longitude: " + longitude;
-	for (const [cordi] of Object.entries(cordinet)){
-		// console.log(cordinet[cordi])
-		var la = cordinet[cordi]["la"]
-		var lo = cordinet[cordi]["lo"]
-		var id = cordinet[cordi]["id"]
-		var info = cordinet[cordi]["info"]
+	for (const [cordi] of Object.entries(mapData)){
+		var la = mapData[cordi]["la"]
+		var lo = mapData[cordi]["lo"]
+		var id = mapData[cordi]["id"]
+		var info = mapData[cordi]["info"]
 		var map = L.map(id).setView([la, lo], 15);
 
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -37,18 +64,14 @@ function showPosition() {
 		}).addTo(map);
 
 		var marker1 = L.marker([la, lo]).addTo(map);
-		marker1.bindPopup(info).openPopup();
-		// var marker2 = L.marker([4.910321, 114.871165]).addTo(map); //4.910321, 114.871165
-		// var marker3 = L.marker([4.765309, 114.672298]).addTo(map); //4.765309, 114.672298
-		// var line = L.polyline([marker1.getLatLng(), marker2.getLatLng(), marker3.getLatLng()], {color: 'red'}).addTo(map);
+		if(enable_info){
+			marker1.bindPopup(info).openPopup();
+		}
 	}
 }
 
-showPosition();
+// uncomment the line below to automatically
+// create div based on the mapData into #mapcontainer (div)
 
-// if (navigator.geolocation) {
-// 	console.log("1")
-// 	navigator.geolocation.getCurrentPosition(showPosition);
-// } else {
-// 	// document.getElementById("coordinates").innerHTML = "Geolocation is not supported by this browser.";
-// }
+// create_div();
+showPosition();

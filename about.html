@@ -39,133 +39,132 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
 </head>
 
-<body style="background: #CDC9C3;font-family: Inter, sans-serif;">
-    <nav class="navbar navbar-light navbar-expand-md py-3" style="background: #555555;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#">
-                <div class="d-flex flex-column"><a class="d-flex flex-column" href="index.html"><span class="fw-bold" style="font-family: Inter, sans-serif;font-weight: bold;font-size: 20px;text-align: left;color: rgba(255,255,255,0.9);">LOOPHAT</span><span class="fw-lighter" style="color: rgb(126,241,151);text-align: left;font-size: 15px;">CHEAPER</span></a></div>
-            </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link fw-lighter" href="index.html" style="color: #ffffff;font-family: Inter, sans-serif;">Home</a></li>
-                    <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-lighter" href="products.html" style="color: #ffffff;font-family: Inter, sans-serif;">Products</a></li>
-                    <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-bolder" href="about.html" style="color: #ffffff;font-family: Inter, sans-serif;">About</a></li>
-                    <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-lighter" href="FAQ.html" style="color: #ffffff;font-family: Inter, sans-serif;">FAQ</a></li>
-                </ul>
-            </div>
+<body style="background: #CDC9C3;font-family: Inter, sans-serif;"><!-- navigation bar -->
+<nav class="navbar navbar-light navbar-expand-md py-3" style="background: #555555;">
+    <div class="container"><a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="d-flex flex-column"><a class="d-flex flex-column" href="index.html"><span class="fw-bold" style="font-family: Inter, sans-serif;font-weight: bold;font-size: 20px;text-align: left;color: rgba(255,255,255,0.9);">LOOPHAT</span><span class="fw-lighter" style="color: rgb(126,241,151);text-align: left;font-size: 15px;">CHEAPER</span></a></div>
+        </a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div id="navcol-1" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link fw-lighter" href="index.html" style="color: #ffffff;font-family: Inter, sans-serif;">Home</a></li>
+                <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-lighter" href="products.html" style="color: #ffffff;font-family: Inter, sans-serif;">Products</a></li>
+                <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-bolder" href="about.html" style="color: #ffffff;font-family: Inter, sans-serif;">About</a></li>
+                <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-lighter" href="FAQ.html" style="color: #ffffff;font-family: Inter, sans-serif;">FAQ</a></li>
+            </ul>
         </div>
-    </nav>
-    <div data-bss-parallax-bg="true" style="height: 500px;background: url(&quot;assets/img/SAyur.jpg&quot;) center / cover;"></div>
-    <div class="container py-4 py-xl-5">
-        <div class="row gy-4 gy-md-0">
-            <div class="col-md-6">
-                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="assets/img/abnout%20us.jpg"></div>
-            </div>
-            <div class="col-md-6 d-md-flex align-items-md-center">
-                <div>
-                    <h2 class="text-uppercase fw-bold" style="border-bottom-width: 5px;border-bottom-style: solid;text-align: left;">ABOUT US</h2>
-                    <p class="my-3" style="text-align: justify;">At Loophat, we believe that grocery shopping should be easy, convenient, and affordable for everyone. That's why we've created an online grocery store that offers a wide selection of high-quality products at competitive prices. Whether you're looking for fresh produce, pantry staples, or specialty items, you'll find everything you need on our website.</p>
-                </div>
+    </div>
+</nav><div style="height: 500px;background: url('assets/img/SAyur.jpg') center / cover;"></div><div class="container py-4 py-xl-5">
+    <div class="row gy-4 gy-md-0">
+        <div class="col-md-6">
+            <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="assets/img/abnout%20us.jpg" /></div>
+        </div>
+        <div class="col-md-6 d-md-flex align-items-md-center">
+            <div>
+                <h2 class="text-uppercase fw-bold" style="border-bottom-width: 5px;border-bottom-style: solid;text-align: left;">ABOUT US</h2>
+                <p class="my-3" style="text-align: justify;">At Loophat, we believe that grocery shopping should be easy, convenient, and affordable for everyone. That&#39;s why we&#39;ve created an online grocery store that offers a wide selection of high-quality products at competitive prices. Whether you&#39;re looking for fresh produce, pantry staples, or specialty items, you&#39;ll find everything you need on our website.</p>
             </div>
         </div>
     </div>
-    <div class="container" style="margin-bottom: 60px;margin-top: 60px;">
-        <div id="calendar" style="background: #ffffff;"></div>
-    </div>
-    <div class="container">
-        <section class="py-4 py-xl-5">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-md-8 col-xl-6 text-center mx-auto">
-                        <h2>Contact us</h2>
-                    </div>
+</div><!-- calendar container -->
+<div class="container" style="margin-bottom: 60px;margin-top: 60px;">
+    <div id="calendar" style="background: #ffffff;"></div>
+</div><!-- contact info and feedback information -->
+<div class="container">
+    <section class="py-4 py-xl-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <h2>Contact us</h2>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-4">
-                        <div class="row" style="margin-left: 0px;margin-right: 0px;padding: 25px;">
-                            <div class="col">
-                                <fieldset></fieldset>
-                                <legend style="border-bottom-width: 5px;border-bottom-style: solid;">&nbsp;CONTACT DETAILS</legend>
-                                <p></p>
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <tbody>
-                                            <tr></tr>
-                                            <tr>
-                                                <td><i class="fa fa-map-marker"></i></td>
-                                                <td>Lot 12283, Simpang 27, Jalan Gadong,<br>Kg Menglait</td>
-                                            </tr>
-                                            <tr>
-                                                <td><i class="fa fa-phone"></i></td>
-                                                <td>+673 2226885/5</td>
-                                            </tr>
-                                            <tr>
-                                                <td><i class="fa fa-envelope"></i></td>
-                                                <td>helpus@gmail.com</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="row" style="margin-left: 0px;margin-right: 0px;padding: 25px;">
+                        <div class="col">
+                            <fieldset></fieldset>
+                            <legend style="border-bottom-width: 5px;border-bottom-style: solid;"> CONTACT DETAILS</legend>
+                            <p></p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr></tr>
+                                        <tr>
+                                            <td><i class="fa fa-map-marker"></i></td>
+                                            <td>Lot 12283, Simpang 27, Jalan Gadong,<br />Kg Menglait</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-phone"></i></td>
+                                            <td>+673 2226885/5</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-envelope"></i></td>
+                                            <td>helpus@gmail.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-5 col-xl-4">
-                        <div><form class="p-3 p-xl-4 needs-validation" method="post" novalidate>
-    <legend style="border-bottom-width: 5px;border-bottom-style: solid;">FEEDBACK FORM</legend>
-    <div class="mb-3"><input id="name-2" class="form-control form-control form-control form-control" type="text" name="fname" placeholder="First Name" pattern="[a-zA-Z ]{1,20}" required />
-        <div class="valid-feedback"><span> Looks good! </span></div>
-        <div class="invalid-feedback"><span> Not Looks good! </span></div>
-    </div>
-    <div class="mb-3"><input id="name-1" class="form-control form-control form-control form-control" type="text" name="lname" placeholder="Last Name" pattern="[a-zA-Z ]{1,20}" required />
-        <div class="valid-feedback"><span> Looks good! </span></div>
-        <div class="invalid-feedback"><span> Not Looks good! </span></div>
-    </div>
-    <div class="mb-3"><input id="email-2" class="form-control form-control form-control form-control" type="email" name="email" placeholder="Email" required />
-        <div class="valid-feedback"><span> Looks good! </span></div>
-        <div class="invalid-feedback"><span> Not Looks good! </span></div>
-    </div>
-    <div class="mb-3"><textarea id="message-2" class="form-control form-control form-control form-control" name="message" rows="6" placeholder="Message" maxlength="200" required></textarea></div>
-    <div><button class="btn btn-info d-block w-100" type="submit">Send </button></div>
-</form></div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-4">
+                    <div>
+                        <form class="p-3 p-xl-4 needs-validation" method="post" novalidate>
+                            <legend style="border-bottom-width: 5px;border-bottom-style: solid;">FEEDBACK FORM</legend>
+                            <div class="mb-3"><input id="name-2" class="form-control form-control form-control form-control" type="text" name="fname" placeholder="First Name" pattern="[a-zA-Z ]{1,20}" required />
+                                <div class="valid-feedback"><span> Looks good! </span></div>
+                                <div class="invalid-feedback"><span> Not Looks good! </span></div>
+                            </div>
+                            <div class="mb-3"><input id="name-1" class="form-control form-control form-control form-control" type="text" name="lname" placeholder="Last Name" pattern="[a-zA-Z ]{1,20}" required />
+                                <div class="valid-feedback"><span> Looks good! </span></div>
+                                <div class="invalid-feedback"><span> Not Looks good! </span></div>
+                            </div>
+                            <div class="mb-3"><input id="email-2" class="form-control form-control form-control form-control" type="email" name="email" placeholder="Email" required />
+                                <div class="valid-feedback"><span> Looks good! </span></div>
+                                <div class="invalid-feedback"><span> Not Looks good! </span></div>
+                            </div>
+                            <div class="mb-3"><textarea id="message-2" class="form-control form-control form-control form-control" name="message" rows="6" placeholder="Message" maxlength="200" required></textarea></div>
+                            <div><button class="btn btn-info d-block w-100" type="submit">Send </button></div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <section id="contact" style="padding: 40px;padding-right: 5px;padding-left: 4px;"></section>
-    <div class="container" style="padding-bottom: 60px;">
-        <h4 style="font-weight: bold;">First Branch</h4>
-        <div id="map1" style="width: 100%;height: 400px;"></div>
-    </div>
-    <div class="container" style="padding-bottom: 60px;">
-        <h4 style="font-weight: bold;">Second Branch</h4>
-        <div id="map2" style="width: 100%;height: 400px;"></div>
-    </div>
-    <div class="container" style="padding-bottom: 60px;">
-        <h4 style="font-weight: bold;">Third Branch</h4>
-        <div id="map3" style="width: 100%;height: 400px;"></div>
-    </div>
-    <footer style="background: #555555;color: rgb(255,255,255);">
-        <div class="container py-4 py-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;">
-                    <h3 class="fs-6">Information</h3><a class="fw-lighter" href="FAQ.html" style="color: rgb(255,255,255);">FAQ</a><a class="fw-lighter" href="about.html" style="color: rgb(255,255,255);">About us</a><a class="fw-lighter" href="about.html" style="color: rgb(255,255,255);">Contact us</a>
-                </div>
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;">
-                    <h3 class="fs-6">Customer Services</h3><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Warranty Information</a><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Return &amp; Exchange Policy</a><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Privacy Policy</a>
-                </div>
-                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;"><span style="height: 25px;">Contact us</span>
-                    <p style="color: rgb(255,255,255);height: 90px;"><i class="icon ion-social-whatsapp" style="padding: 8px;"></i>+673 8823288<br><br><i class="icon ion-email" style="padding: 8px;"></i>helpus@gmail.com</p>
-                </div>
+        </div>
+    </section>
+</div>
+    <section id="contact" style="padding: 40px;padding-right: 5px;padding-left: 4px;"></section><!-- map container -->
+<div class="container" style="padding-bottom: 60px;">
+    <h4 style="font-weight: bold;">First Branch</h4>
+    <div id="map1" style="width: 100%;height: 400px;"></div>
+</div><!-- map container -->
+<div class="container" style="padding-bottom: 60px;">
+    <h4 style="font-weight: bold;">Second Branch</h4>
+    <div id="map2" style="width: 100%;height: 400px;"></div>
+</div><!-- map container -->
+<div class="container" style="padding-bottom: 60px;">
+    <h4 style="font-weight: bold;">Third Branch</h4>
+    <div id="map3" style="width: 100%;height: 400px;"></div>
+</div><!-- footer bar -->
+<footer style="background: #555555;color: rgb(255,255,255);">
+    <div class="container py-4 py-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;">
+                <h3 class="fs-6">Information</h3><a class="fw-lighter" href="FAQ.html" style="color: rgb(255,255,255);">FAQ</a><a class="fw-lighter" href="about.html" style="color: rgb(255,255,255);">About us</a><a class="fw-lighter" href="about.html" style="color: rgb(255,255,255);">Contact us</a>
             </div>
-            <hr>
-            <div class="d-flex justify-content-between align-items-center pt-3">
-                <p class="mb-0">Copyright © 2023 Brand</p>
+            <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;">
+                <h3 class="fs-6">Customer Services</h3><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Warranty Information</a><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Return &amp; Exchange Policy</a><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Privacy Policy</a>
+            </div>
+            <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;"><span style="height: 25px;">Contact us</span>
+                <p style="color: rgb(255,255,255);height: 90px;"><i class="icon ion-social-whatsapp" style="padding: 8px;"></i>+673 8823288<br /><br /><i class="icon ion-email" style="padding: 8px;"></i>helpus@gmail.com</p>
             </div>
         </div>
-    </footer>
+        <hr />
+        <div class="d-flex justify-content-between align-items-center pt-3">
+            <p class="mb-0">Copyright © 2023 Brand</p>
+        </div>
+    </div>
+</footer>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/calendar.js"></script>
     <script src="assets/js/Faq-by-pomdre-faq.js"></script>
     <script src="assets/js/formfeedback.js"></script>

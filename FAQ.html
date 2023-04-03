@@ -38,102 +38,100 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
 </head>
 
-<body style="background: #CDC9C3;font-family: Inter, sans-serif;">
-    <nav class="navbar navbar-light navbar-expand-md py-3" style="background: #555555;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#">
-                <div class="d-flex flex-column"><a class="d-flex flex-column" href="index.html"><span class="fw-bold" style="font-family: Inter, sans-serif;font-weight: bold;font-size: 20px;text-align: left;color: rgba(255,255,255,0.9);">LOOPHAT</span><span class="fw-lighter" style="color: rgb(126,241,151);text-align: left;font-size: 15px;">CHEAPER</span></a></div>
-            </a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-color: rgb(255,255,255);"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link fw-lighter" href="index.html" style="color: #ffffff;font-family: Inter, sans-serif;">Home</a></li>
-                    <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-lighter" href="products.html" style="color: #ffffff;font-family: Inter, sans-serif;">Products</a></li>
-                    <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-lighter" href="about.html" style="color: #ffffff;font-family: Inter, sans-serif;">About</a></li>
-                    <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-bolder" href="FAQ.html" style="color: #ffffff;font-family: Inter, sans-serif;">FAQ</a></li>
-                </ul>
+<body style="background: #CDC9C3;font-family: Inter, sans-serif;"><!-- navigation bar -->
+<nav class="navbar navbar-light navbar-expand-md py-3" style="background: #555555;">
+    <div class="container"><a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="d-flex flex-column"><a class="d-flex flex-column" href="index.html"><span class="fw-bold" style="font-family: Inter, sans-serif;font-weight: bold;font-size: 20px;text-align: left;color: rgba(255,255,255,0.9);">LOOPHAT</span><span class="fw-lighter" style="color: rgb(126,241,151);text-align: left;font-size: 15px;">CHEAPER</span></a></div>
+        </a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" style="border-color: rgb(255,255,255);"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div id="navcol-1" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link fw-lighter" href="index.html" style="color: #ffffff;font-family: Inter, sans-serif;">Home</a></li>
+                <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-lighter" href="products.html" style="color: #ffffff;font-family: Inter, sans-serif;">Products</a></li>
+                <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-lighter" href="about.html" style="color: #ffffff;font-family: Inter, sans-serif;">About</a></li>
+                <li class="nav-item fw-lighter" style="color: #ffffff;font-family: Inter, sans-serif;"><a class="nav-link fw-bolder" href="FAQ.html" style="color: #ffffff;font-family: Inter, sans-serif;">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav><div class="container" style="padding-top: 60px;padding-bottom: 60px;">
+    <div id="accordion-1" class="accordion" role="tablist">
+        <div class="accordion-item">
+            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">What is your delivery policy?</button></h2>
+            <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                    <p class="mb-0">Our delivery policy depends on your location and the items you are ordering. Please refer to our delivery information page for more details.</p>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container" style="padding-top: 60px;padding-bottom: 60px;">
-        <div class="accordion" role="tablist" id="accordion-1">
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1">What is your delivery policy?</button></h2>
-                <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
-                    <div class="accordion-body">
-                        <p class="mb-0">Our delivery policy depends on your location and the items you are ordering. Please refer to our delivery information page for more details.</p>
-                    </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Do you offer same-day delivery?</button></h2>
+            <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                    <p class="mb-0">Yes, we offer same-day delivery in select areas. Please check our delivery information page to see if same-day delivery is available in your area.</p>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-2" aria-expanded="false" aria-controls="accordion-1 .item-2">Do you offer same-day delivery?</button></h2>
-                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-1">
-                    <div class="accordion-body">
-                        <p class="mb-0">Yes, we offer same-day delivery in select areas. Please check our delivery information page to see if same-day delivery is available in your area.</p>
-                    </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">Can I pick up my order at the store?</button></h2>
+            <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                    <p class="mb-0">Yes, we offer in-store pickup for online orders. You can choose this option at checkout and select a pickup time that works for you.</p>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-3" aria-expanded="false" aria-controls="accordion-1 .item-3">Can I pick up my order at the store?</button></h2>
-                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-1">
-                    <div class="accordion-body">
-                        <p class="mb-0">Yes, we offer in-store pickup for online orders. You can choose this option at checkout and select a pickup time that works for you.</p>
-                    </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="false" aria-controls="accordion-1 .item-4">Do you offer organic or locally sourced products?</button></h2>
+            <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                    <p class="mb-0">Yes, we carry a variety of organic and locally sourced products. You can search for these products on our website or look for them in-store.</p>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-4" aria-expanded="false" aria-controls="accordion-1 .item-4">Do you offer organic or locally sourced products?</button></h2>
-                <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-1">
-                    <div class="accordion-body">
-                        <p class="mb-0">Yes, we carry a variety of organic and locally sourced products. You can search for these products on our website or look for them in-store.</p>
-                    </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="false" aria-controls="accordion-1 .item-5">What is your return policy?</button></h2>
+            <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                    <p class="mb-0">We accept returns for most items within a certain timeframe, as long as they are in their original packaging and have not been opened or used. Please refer to our return policy page for more information.</p>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-5" aria-expanded="false" aria-controls="accordion-1 .item-5">What is your return policy?</button></h2>
-                <div class="accordion-collapse collapse item-5" role="tabpanel" data-bs-parent="#accordion-1">
-                    <div class="accordion-body">
-                        <p class="mb-0">We accept returns for most items within a certain timeframe, as long as they are in their original packaging and have not been opened or used. Please refer to our return policy page for more information.</p>
-                    </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-6" aria-expanded="false" aria-controls="accordion-1 .item-6">Do you offer bulk discounts?</button></h2>
+            <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                    <p class="mb-0">Yes, we offer bulk discounts on select items. Please check our website or speak to a store associate for more information.</p>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-6" aria-expanded="false" aria-controls="accordion-1 .item-6">Do you offer bulk discounts?</button></h2>
-                <div class="accordion-collapse collapse item-6" role="tabpanel" data-bs-parent="#accordion-1">
-                    <div class="accordion-body">
-                        <p class="mb-0">Yes, we offer bulk discounts on select items. Please check our website or speak to a store associate for more information.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-7" aria-expanded="false" aria-controls="accordion-1 .item-7">What payment methods do you accept?</button></h2>
-                <div class="accordion-collapse collapse item-7" role="tabpanel" data-bs-parent="#accordion-1">
-                    <div class="accordion-body">
-                        <p class="mb-0">We accept most major credit cards, debit cards, and PayPal. You can also use our website to pay using your bank account or other payment methods.</p>
-                    </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-7" aria-expanded="false" aria-controls="accordion-1 .item-7">What payment methods do you accept?</button></h2>
+            <div class="accordion-collapse collapse item-7" role="tabpanel" data-bs-parent="#accordion-1">
+                <div class="accordion-body">
+                    <p class="mb-0">We accept most major credit cards, debit cards, and PayPal. You can also use our website to pay using your bank account or other payment methods.</p>
                 </div>
             </div>
         </div>
     </div>
-    <footer style="background: #555555;color: rgb(255,255,255);">
-        <div class="container py-4 py-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;">
-                    <h3 class="fs-6">Information</h3><a class="fw-lighter" href="FAQ.html" style="color: rgb(255,255,255);">FAQ</a><a class="fw-lighter" href="about.html" style="color: rgb(255,255,255);">About us</a><a class="fw-lighter" href="about.html" style="color: rgb(255,255,255);">Contact us</a>
-                </div>
-                <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;">
-                    <h3 class="fs-6">Customer Services</h3><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Warranty Information</a><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Return &amp; Exchange Policy</a><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Privacy Policy</a>
-                </div>
-                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;"><span style="height: 25px;">Contact us</span>
-                    <p style="color: rgb(255,255,255);height: 90px;"><i class="icon ion-social-whatsapp" style="padding: 8px;"></i>+673 8823288<br><br><i class="icon ion-email" style="padding: 8px;"></i>helpus@gmail.com</p>
-                </div>
+</div><!-- footer bar -->
+<footer style="background: #555555;color: rgb(255,255,255);">
+    <div class="container py-4 py-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;">
+                <h3 class="fs-6">Information</h3><a class="fw-lighter" href="FAQ.html" style="color: rgb(255,255,255);">FAQ</a><a class="fw-lighter" href="about.html" style="color: rgb(255,255,255);">About us</a><a class="fw-lighter" href="about.html" style="color: rgb(255,255,255);">Contact us</a>
             </div>
-            <hr>
-            <div class="d-flex justify-content-between align-items-center pt-3">
-                <p class="mb-0">Copyright © 2023 Brand</p>
+            <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;">
+                <h3 class="fs-6">Customer Services</h3><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Warranty Information</a><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Return &amp; Exchange Policy</a><a class="fw-lighter" href="#" style="color: rgb(255,255,255);">Privacy Policy</a>
+            </div>
+            <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="padding-top: 12px;padding-right: 12px;padding-bottom: 12px;"><span style="height: 25px;">Contact us</span>
+                <p style="color: rgb(255,255,255);height: 90px;"><i class="icon ion-social-whatsapp" style="padding: 8px;"></i>+673 8823288<br /><br /><i class="icon ion-email" style="padding: 8px;"></i>helpus@gmail.com</p>
             </div>
         </div>
-    </footer>
+        <hr />
+        <div class="d-flex justify-content-between align-items-center pt-3">
+            <p class="mb-0">Copyright © 2023 Brand</p>
+        </div>
+    </div>
+</footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/Faq-by-pomdre-faq.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.0.0/index.global.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
